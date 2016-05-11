@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "pistol88\\cart\\": ""
+            "pistol88\\tree\\": ""
         }
     }
 }
