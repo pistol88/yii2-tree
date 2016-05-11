@@ -1,0 +1,31 @@
+{
+    "name": "pistol88/yii2-tree",
+    "description": "it's a simple widget to build tree by model collection",
+    "keywords": ["yii2", "yii 2", "widget", "tree"],
+    "homepage": "https://github.com/pistol88/yii2-tree",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/pistol88/yii2-tree"
+    },
+    "authors": [
+        {
+            "name": "Ilya Pistol",
+            "email": "pistol88@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "pistol88\\cart\\": ""
+        }
+    },
+}
