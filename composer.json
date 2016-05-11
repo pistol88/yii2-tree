@@ -1,6 +1,6 @@
 {
     "name": "pistol88/yii2-tree",
-    "description": "it's a simple widget to build tree by model collection",
+    "description": "it's a simple widget to build tree by model",
     "keywords": ["yii2", "yii 2", "widget", "tree"],
     "homepage": "https://github.com/pistol88/yii2-tree",
     "type": "yii2-extension",
@@ -27,5 +27,5 @@
         "psr-4": {
             "pistol88\\cart\\": ""
         }
-    },
+    }
 }
