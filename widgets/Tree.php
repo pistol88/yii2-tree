@@ -11,7 +11,7 @@ class Tree extends \yii\base\Widget
     public $viewUrlToSearch = true;
     public $viewUrlModelName = 'ProductSearch';
     public $viewUrlModelField = 'category_id';
-    public $orderField = 'sort';
+    public $orderField = false;
     public $parentField = 'parent_id';
     public $idField = 'id';
     public $view = 'index';
@@ -28,7 +28,11 @@ class Tree extends \yii\base\Widget
     {
         $model = $this->model;
 
-        $list = $model::find()->orderBy($this->orderField)->asArray()->all();
+        if($this->orderField) {
+            $list = $model::find()->orderBy($this->orderField)->asArray()->all();
+        } else {
+            $list = $model::find()->asArray()->all();
+        }
         $itemsTree = self::buildArray($list, 0, $this->idField, $this->parentField);
 
        return $this->render($this->view, [
