@@ -21,7 +21,6 @@ class Tree extends \yii\base\Widget
         parent::init();
 
         \pistol88\tree\assets\WidgetAsset::register($this->getView());
-        
     }
     
     public function run()
