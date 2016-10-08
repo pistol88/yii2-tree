@@ -8,6 +8,7 @@ class Tree extends \yii\base\Widget
     public $model = null;
     public $updateUrl = 'category/update';
     public $viewUrl = 'product/index';
+    public $deleteUrl = 'category/delete';
     public $viewUrlToSearch = true;
     public $viewUrlModelName = 'ProductSearch';
     public $viewUrlModelField = 'category_id';
