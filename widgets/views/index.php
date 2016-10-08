@@ -6,13 +6,8 @@ use yii\web\View;
 ?>
 <div class="tree-index">
 	<div class="categories-tree">
-		<form action="" method="post">
-			<input type="hidden" name="action" value="updateSort" />
-			<ul>
-				<?=$categoriesTree; ?>
-			</ul>
-		</form>
+		<ul>
+			<?=$categoriesTree; ?>
+		</ul>
 	</div>
-	
-
 </div>
